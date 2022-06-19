@@ -1,0 +1,33 @@
+extends base.pug
+
+block scripts 
+    script(src="/script.js")
+
+block style 
+    style
+        include ../static/styleContact.css
+        include ../static/style.css
+
+block content 
+    nav#navbar.top
+            div#logo 
+                img#img(src="./images/logo.jpg")
+                div DA
+            div
+                ul 
+                    li #[a(href="/") About ]
+                    li #[a(href="/") Home ]
+                    li #[a(href="/") serivces ]
+                    li #[a(href="/") class info ]
+                    li #[a(href="/") contact us]
+    section#contacUs 
+        div.container
+            h1 Contact Us
+            form#myform(action="/contact",method="post")
+                input(type="text",placeholder="Enter your name",name="name",class="myInput")
+                input(type="phone",placeholder="999XXXXXXX",name="phone",class="myInput")
+                input(type="email",placeholder="example@eg.com",name="email",class="myInput")
+                input(type="text",placeholder="Enter you Address",name="address",class="myInput")
+                input(type="text",placeholder="Description",name="desc",class="myInput")
+                button.btn 
+                    |Send Request

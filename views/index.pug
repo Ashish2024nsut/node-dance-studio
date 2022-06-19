@@ -1,0 +1,48 @@
+doctype html 
+html 
+head    
+        title This is title 
+        style
+            include ../static/style.css 
+body 
+        nav#navbar.top
+            div#logo 
+                img#img(src="./images/logo.jpg")
+                div DA
+            div
+                ul 
+                    li #[a(href="/") About ]
+                    li #[a(href="/") Home ]
+                    li #[a(href="/") serivces ]
+                    li #[a(href="/") class info ]
+                    li #[a(href="/") contact us]
+        section#introSection    
+            div Welcome to Dance Academy 
+            div Do What You Like
+        section#missionSection
+            h3 Our Mission
+            div.collection
+                div.card
+                    h3 PROMISE 
+                    div.card-box
+                        img.card-img(src="./images/d1.png)")
+                        div.card-content 
+                            p This is the bes dance academy.
+                div.card
+                    h3 PRACTICE
+                    div.card-box
+                        img.card-img(src="./images/d2.png")
+                        div.card-content 
+                            p Join us to make you dream the reality.
+                div.card
+                    h3 PROCEED
+                    div.card-box
+                        img.card-img(src="./images/d3.png")
+                        div.card-content 
+                            p Weekly practice challenges so that you are never behind.
+        section#sponsorsSection    
+            h3 Our Sponsors
+        footer#footer
+            |copyright © 2020 @dancersacademy.com | all rights reserved.
+        script 
+            include ../static/script.js

@@ -1,0 +1,52 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+h1{
+    margin:10px 20px;
+    font-size:40px;
+    text-align: center;
+}
+
+#myform{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+#navbar{
+    position:static;
+}
+
+.container{
+    width: 100%;
+}
+
+#contacUs{
+    height:92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+.myInput{
+    display: block;
+    width: 50%;
+    padding: 7px 9px;
+    margin: 11px;
+    font-size: 17px;
+    border: inset;
+    border-radius: 5px;
+}
+
+.btn{
+    padding:5px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin:5px 0;
+}
